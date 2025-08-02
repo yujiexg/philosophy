@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Random Philosophy Concepts</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #fefaf6;
+      text-align: center;
+      padding-top: 100px;
+    }
+    button {
+      font-size: 4em;
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 8px;
+      background-color: #222;
+      color: white;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 4em;
+      font-size: 4em;
+      color: #444;
+      transition: opacity 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Random Philosophy Concepts Generator</h1>
+  <button onclick="showRandomWord()">💭 Click Me</button>
+  <div id="output"></div>
+
+  <script>
+    const words = [
+      "a fortiori",
+      "a priori",
+      "a posteriori",
+      "a this",
+      "abandonment",
+      "abduction",
+      "abortion",
+      "absolute, the",
+      "absolute conception",
+      "absolute idea",
+      "absolute identity",
+      "absolutism",
+      "abstract / concrete",
+      "abstract entities",
+      "abstract ideas",
+      "abstract particular",
+      "abstract terms",
+      "abstracta",
+      "abstraction",
+      "absurdity",
+      "academic freedom",
+      "academy",
+      "accedie",
+      "acceptability",
+      "accident",
+      "accidental property",
+      "achievement verbs",
+      "achilles and the tortoise",
+      "acosmism",
+      "acquaintance",
+      "acroama",
+      "act",
+      "act and omission",
+      "act token",
+      "act type",
+      "act-consequentialism",
+      "act-object theory",
+      "action",
+      "action at a distance",
+      "active intellect",
+      "active reason",
+      "actual idealism",
+      "actualisation",
+      "actualism",
+      "actuality",
+      "actuality / actualisation",
+      "actus reus",
+      "ad hoc hypothesis",
+      "additive fallacy",
+      "additivity assumption",
+      "adequacy conditions on definitions of truth",
+      "adequate ideas",
+      "adventitious ideas",
+      "adverbial materialism",
+      "adverbial theory",
+      "aesthetic attitude",
+      "aesthetic autonomy",
+      "aesthetic detachment",
+      "aesthetic distance",
+      "aesthetic educatin",
+      "aesthetic imagination",
+      "aesthetic judgement",
+      "aesthetic pleasure",
+      "aesthetic property",
+      "aesthetic value",
+      "aestheticism",
+      "aesthetics",
+      "aeterni patris",
+      "aether",
+      "affirmative method",
+      "affirming mode",
+      "affirming the consequent",
+      "afterlife",
+      "agape",
+      "age of adventure",
+      "age of reason",
+      "agent",
+      "agent-centered morality",
+      "agent-neutral reason",
+      "agent-related ethics",
+      "agent-relative reason",
+      "agglomeration principle",
+      "agnosticism",
+      "agreeable",
+      "AI",
+      "algorithm",
+      "alienation",
+      "alternation",
+      "altruism",
+      "ambiguity",
+      "ambiguous middle, fallacy of",
+      "âme collective",
+      "amoralism",
+      "amour de soi",
+      "amour-propre",
+      "amphiboly",
+      "ampliative induction",
+      "ampliative judgement",
+      "ampliative reasoning",
+      "analogies of experience",
+      "analogy",
+      "analysandum",
+      "analysans",
+      "analysis",
+      "analysis, paradox of",
+      "analytic",
+      "analytic ethics",
+      "analytic Marxism",
+      "analytic philosophy",
+      "analytic philosophy of history",
+      "analytic-synthetic",
+      "analytical behaviorism",
+      "analytical definition",
+      "analytical jurisprudence",
+      "analytical phenomenalism",
+      "analytical priority",
+      "analytical Thomism",
+      
+
+    ];
+
+    function showRandomWord() {
+      const randomIndex = Math.floor(Math.random() * words.length);
+      const output = document.getElementById("output");
+      output.style.opacity = 0;
+      setTimeout(() => {
+        output.textContent = words[randomIndex];
+        output.style.opacity = 1;
+      }, 300);
+    }
+  </script>
+
+</body>
+</html>
