@@ -1,1 +1,0 @@
-This is a random philosophy concepts generator. You can use this when you don't know what topics to think about or when you are bored. And of course, as always, this can help you realize how little you know. Nevertheless, please be happy and be yourself, my friend.
